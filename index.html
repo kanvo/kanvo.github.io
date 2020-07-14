@@ -4,8 +4,8 @@
   <meta charset="utf-8">
 
   <title>kanvo :: brighten any room for cheap</title>
-  <meta name="description" content="Low-cost canvas prints to brighten up any room">
-  <meta name="author" content="SitePoint">
+  <meta name="description" content="Low-cost canvas prints to brighten up any room.">
+  <meta name="author" content="Rhidian Cody">
 
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
   
@@ -35,25 +35,13 @@
               letter-spacing:-13px;
               line-height: normal;
               color:#555;
-              background: transparent;
             }
-              #anvo {
-                display: inline-block;
-                margin-left: -14px;
-              }
-              #k {
-                display: inline-block;
-                margin-left: -14px;
-                width: 88px;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-              }
    </style>
 <body>
   <div class="container">
     <div id="logo">
       <div id="logo_canvas">
-        <div id="logo_text"><span id="k">k</span><span id="anvo"><span style="letter-spacing:-25px;">a</span>nv<span style="letter-spacing:0;">o</span></span></div>
+        <div id="logo_text">k<span style="letter-spacing:-25px;">a</span>nv<span style="letter-spacing:0;">o</span></div>
       </div>
     </div>
   </div>
@@ -75,10 +63,9 @@
       return gradient;
     }
     var gradientCss = generateGradientCss();
-    console.log('gradientCss', gradientCss);
-    document.getElementById('k').style.background = gradientCss;
-    document.getElementById('k').style['-webkit-background-clip'] = 'text';
-    document.getElementById('k').style['-webkit-text-fill-color'] = 'transparent';
+    document.getElementById('logo_text').style.background = gradientCss;
+    document.getElementById('logo_text').style['-webkit-background-clip'] = 'text';
+    document.getElementById('logo_text').style['-webkit-text-fill-color'] = 'transparent';
   </script>
 </body>
 </html>
