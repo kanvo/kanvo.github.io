@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>kanvo :: brighten any room for cheap</title>
+  <meta name="description" content="Low-cost canvas prints to brighten up any room">
+  <meta name="author" content="SitePoint">
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+  
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+      .container {
+        position:relative;
+        height:100%;
+      }
+        #logo {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%) scale(0.5);
+        }
+          #logo_canvas {
+            opacity: 0.5;
+            overflow: hidden;
+            height: 150px;
+            margin-top:49px;
+          }
+            #logo_text {
+              font-family: 'Montserrat', sans-serif;
+              font-size:150px;
+              letter-spacing:-13px;
+              line-height: 49px;
+            }
+   </style>
+<body>
+  <div class="container">
+    <div id="logo">
+      <div id="logo_canvas">
+        <div id="logo_text">k<span style="letter-spacing:-25px;">a</span>nv<span style="letter-spacing:0;">o</span></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
